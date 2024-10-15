@@ -1,11 +1,8 @@
 // src/server.ts
 import express, { Express, Request, Response } from "express";
-import dotenv from "dotenv";
 import router from "./router";
 import morgan from "morgan";
 import cors from "cors";
-
-dotenv.config();
 
 const app: Express = express();
 

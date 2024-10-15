@@ -1,5 +1,9 @@
 // src/index.ts
-import app from './server';
+import dotenv from "dotenv";
+
+dotenv.config();
+
+import app from "./server";
 
 const port = process.env.PORT || 3000;
 

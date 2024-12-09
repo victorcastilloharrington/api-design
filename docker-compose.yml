@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  postgresdb:
+    image: postgres:12.9
+    container_name: api-design-db
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "fmapi"
+    ports:
+      - "5432:5432"

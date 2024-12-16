@@ -7,3 +7,7 @@ declare module "express-serve-static-core" {
     user: JwtPayload;
   }
 }
+
+export interface ApiError extends Error {
+  type: string;
+}

@@ -15,6 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api", protect, router);
 
+app.get('/', (req, res)=> {
+    res.json({message: "Hello"})
+})
+
 app.post('/user', createNewUser)
 app.post('/signin', signIn)
 
